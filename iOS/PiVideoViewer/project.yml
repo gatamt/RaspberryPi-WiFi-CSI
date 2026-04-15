@@ -1,0 +1,55 @@
+name: PiVideoViewer
+options:
+  bundleIdPrefix: com.gata
+  deploymentTarget:
+    iOS: "16.0"
+  xcodeVersion: "16.3"
+
+targets:
+  PiVideoViewer:
+    type: application
+    platform: iOS
+    sources:
+      - PiVideoViewer
+    info:
+      path: PiVideoViewer/Info.plist
+      properties:
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        NSLocalNetworkUsageDescription: "PiVideoViewer needs local network access to discover and stream pose video from a Raspberry Pi on the iPhone Personal Hotspot."
+        NSBonjourServices:
+          - _wificsi._udp
+        NSBluetoothAlwaysUsageDescription: "PiVideoViewer uses Bluetooth to set up and control your Raspberry Pi."
+        UIBackgroundModes:
+          - bluetooth-central
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.gata.pivideoviewer
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        SWIFT_VERSION: "5.9"
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: YOUR_TEAM_ID
+        SUPPORTS_MACCATALYST: false
+        TARGETED_DEVICE_FAMILY: "1"
+
+  PiVideoViewerTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - PiVideoViewerTests
+    dependencies:
+      - target: PiVideoViewer
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.gata.pivideoviewer.tests
+        SWIFT_VERSION: "5.9"
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: YOUR_TEAM_ID
+        TARGETED_DEVICE_FAMILY: "1"
+        GENERATE_INFOPLIST_FILE: YES

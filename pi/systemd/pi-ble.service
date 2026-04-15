@@ -1,0 +1,21 @@
+[Unit]
+Description=Pi BLE Setup Server
+After=bluetooth.target dbus.service zerotier-one.service sys-kernel-debug.mount
+Wants=bluetooth.target
+
+[Service]
+Type=simple
+User=root
+# Configure BLE before starting: disable BR/EDR, set NoInputNoOutput, raise supervision timeout
+ExecStartPre=/usr/bin/bluetoothctl power on
+ExecStartPre=/bin/sh -c "echo 200 > /sys/kernel/debug/bluetooth/hci0/supervision_timeout || true"
+ExecStart=/usr/bin/python3 -m pi_ble
+WorkingDirectory=/home/pi/RaspberryPi-WiFi-CSI/pi
+Restart=on-failure
+RestartSec=5
+Environment=PYTHONPATH=/home/pi/RaspberryPi-WiFi-CSI/pi
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

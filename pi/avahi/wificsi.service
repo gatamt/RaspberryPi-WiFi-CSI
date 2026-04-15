@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone='no'?>
+<!DOCTYPE service-group SYSTEM "avahi-service.dtd">
+<!--
+  Avahi static service declaration for the RPi pose video streamer.
+  Install this file at /etc/avahi/services/wificsi.service and restart
+  avahi-daemon. iPhone-side BonjourDiscoveryManager will find this service
+  on the Personal Hotspot subnet.
+-->
+<service-group>
+  <name replace-wildcards="yes">GATA Pi Video (%h)</name>
+  <service>
+    <type>_wificsi._udp</type>
+    <port>3334</port>
+    <txt-record>port=3334</txt-record>
+    <txt-record>codec=h264</txt-record>
+    <txt-record>width=1280</txt-record>
+    <txt-record>height=720</txt-record>
+    <txt-record>fps=30</txt-record>
+    <txt-record>proto=1</txt-record>
+    <txt-record>source=rpi5</txt-record>
+    <txt-record>overlay=baked</txt-record>
+  </service>
+</service-group>

@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		023D0AC021978547A7E7FF6B /* BLEScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5262DC36F9558D17873F27B /* BLEScanView.swift */; };
+		04260AF86C25A265FD432E42 /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2E712C4EC028925396481C /* BLEManager.swift */; };
+		12C43F16EB3B4E30035EE3EB /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282EBEB504C06D447CB805CF /* AppState.swift */; };
+		1764B2F1ADFD4CD0CF75CC15 /* ChangePasswordSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7893066ECDD124107AC970CC /* ChangePasswordSheet.swift */; };
+		194EFED4AE41186AA4F54AE6 /* WiFiSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C7A68632420B281E1E4516 /* WiFiSetupView.swift */; };
+		1A70517E1310EF0008E2F6F7 /* DebugOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2453BCE50E1F37A5B60A652F /* DebugOverlayView.swift */; };
+		30F0CF35573992926EBF301A /* BonjourDiscoveryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62B3A1506558A2D1F018B4C /* BonjourDiscoveryManager.swift */; };
+		346838C782B6EB33DB634D29 /* VideoDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDE066AC1F8826AAFE266E8 /* VideoDisplayView.swift */; };
+		34B58BF1EDED4550C789F794 /* UDPFrameReassemblerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BBDFBBE14ACDA3519E0E /* UDPFrameReassemblerTests.swift */; };
+		411DB1EFFEBD6088B88DADC9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191149FAEF69396370FB2B34 /* ContentView.swift */; };
+		6024AE578F1C733B6FB31607 /* UDPFrameReassembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EFB04B996577BF7B17305D /* UDPFrameReassembler.swift */; };
+		6141A27076353176CC313A1D /* PINSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522E921AC5B0DFD7ACF3B205 /* PINSetupView.swift */; };
+		783ACF77D4403A3BCC58F693 /* PiStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFDD81986B8D115A79DA2E /* PiStorage.swift */; };
+		993293F7A6BE1D49BE39AFF9 /* HardwareH264Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5432B560EEA5C8D4B8BFC5 /* HardwareH264Decoder.swift */; };
+		9D19414497472D2B53BC5BDA /* SettingsMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2442245C113B51F691644CF /* SettingsMenuView.swift */; };
+		AD7A1744D2FB0389844B0F07 /* ChangeWiFiSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E752AB5DE0CCA2900BF98DE3 /* ChangeWiFiSheet.swift */; };
+		CE94E2E6A8A866954ACB6D2E /* BLEProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4875897B6B20D303A7FBCE /* BLEProtocol.swift */; };
+		DBF61C67EAFD27C62818E149 /* ThermalMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E05CBEF51E1C1D2CE1C4A9A /* ThermalMonitor.swift */; };
+		E0D03C7DE954CEC545A862D2 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3689F47D39F0A3A3D49CE04 /* StartView.swift */; };
+		E606EDF35AACE53F4BBC1FFD /* UDPVideoClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EC3462708960C731E9EBEF /* UDPVideoClient.swift */; };
+		EB19F834F963003DC817027D /* PiVideoViewerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECB688AD03AD8346B8140F3 /* PiVideoViewerApp.swift */; };
+		FF2B690252FDC8BD4F5D1969 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21B16EAA1F26C8A3D399938 /* RootView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB63DA88ECF7C67EEF16FD11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BD022FC1E118F65705E79E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FD6CE5E84446FBCA629A7B2;
+			remoteInfo = PiVideoViewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0915BE1A63F775C464F25FA0 /* PiVideoViewer.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = PiVideoViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D2E712C4EC028925396481C /* BLEManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEManager.swift; sourceTree = "<group>"; };
+		0E05CBEF51E1C1D2CE1C4A9A /* ThermalMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThermalMonitor.swift; sourceTree = "<group>"; };
+		191149FAEF69396370FB2B34 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2453BCE50E1F37A5B60A652F /* DebugOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugOverlayView.swift; sourceTree = "<group>"; };
+		282EBEB504C06D447CB805CF /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		3BFFDD81986B8D115A79DA2E /* PiStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiStorage.swift; sourceTree = "<group>"; };
+		522E921AC5B0DFD7ACF3B205 /* PINSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINSetupView.swift; sourceTree = "<group>"; };
+		7893066ECDD124107AC970CC /* ChangePasswordSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordSheet.swift; sourceTree = "<group>"; };
+		9E9002DFCBCE153EE5835AFE /* PiVideoViewerTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = PiVideoViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A21B16EAA1F26C8A3D399938 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		B2442245C113B51F691644CF /* SettingsMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMenuView.swift; sourceTree = "<group>"; };
+		C2EC3462708960C731E9EBEF /* UDPVideoClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDPVideoClient.swift; sourceTree = "<group>"; };
+		C5C7A68632420B281E1E4516 /* WiFiSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiSetupView.swift; sourceTree = "<group>"; };
+		CBDE066AC1F8826AAFE266E8 /* VideoDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDisplayView.swift; sourceTree = "<group>"; };
+		DECB688AD03AD8346B8140F3 /* PiVideoViewerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiVideoViewerApp.swift; sourceTree = "<group>"; };
+		E3689F47D39F0A3A3D49CE04 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		E5262DC36F9558D17873F27B /* BLEScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEScanView.swift; sourceTree = "<group>"; };
+		E618199BCB64382EDA490CCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E752AB5DE0CCA2900BF98DE3 /* ChangeWiFiSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeWiFiSheet.swift; sourceTree = "<group>"; };
+		ED4875897B6B20D303A7FBCE /* BLEProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEProtocol.swift; sourceTree = "<group>"; };
+		ED5432B560EEA5C8D4B8BFC5 /* HardwareH264Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardwareH264Decoder.swift; sourceTree = "<group>"; };
+		EE44BBDFBBE14ACDA3519E0E /* UDPFrameReassemblerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDPFrameReassemblerTests.swift; sourceTree = "<group>"; };
+		F62B3A1506558A2D1F018B4C /* BonjourDiscoveryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonjourDiscoveryManager.swift; sourceTree = "<group>"; };
+		F8EFB04B996577BF7B17305D /* UDPFrameReassembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDPFrameReassembler.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		06C77A28E97B2201F7FCC82F /* PiVideoViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BBDFBBE14ACDA3519E0E /* UDPFrameReassemblerTests.swift */,
+			);
+			path = PiVideoViewerTests;
+			sourceTree = "<group>";
+		};
+		2F3DFBE9909967830691D84F = {
+			isa = PBXGroup;
+			children = (
+				ED752EFE7CFE58CBA08E2EDE /* PiVideoViewer */,
+				06C77A28E97B2201F7FCC82F /* PiVideoViewerTests */,
+				B7A7C3073A8F90C64846C946 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B7A7C3073A8F90C64846C946 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0915BE1A63F775C464F25FA0 /* PiVideoViewer.app */,
+				9E9002DFCBCE153EE5835AFE /* PiVideoViewerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E36D36DB4426FEF054F4A99F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E5262DC36F9558D17873F27B /* BLEScanView.swift */,
+				7893066ECDD124107AC970CC /* ChangePasswordSheet.swift */,
+				E752AB5DE0CCA2900BF98DE3 /* ChangeWiFiSheet.swift */,
+				522E921AC5B0DFD7ACF3B205 /* PINSetupView.swift */,
+				B2442245C113B51F691644CF /* SettingsMenuView.swift */,
+				E3689F47D39F0A3A3D49CE04 /* StartView.swift */,
+				C5C7A68632420B281E1E4516 /* WiFiSetupView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ED752EFE7CFE58CBA08E2EDE /* PiVideoViewer */ = {
+			isa = PBXGroup;
+			children = (
+				282EBEB504C06D447CB805CF /* AppState.swift */,
+				0D2E712C4EC028925396481C /* BLEManager.swift */,
+				ED4875897B6B20D303A7FBCE /* BLEProtocol.swift */,
+				F62B3A1506558A2D1F018B4C /* BonjourDiscoveryManager.swift */,
+				191149FAEF69396370FB2B34 /* ContentView.swift */,
+				2453BCE50E1F37A5B60A652F /* DebugOverlayView.swift */,
+				ED5432B560EEA5C8D4B8BFC5 /* HardwareH264Decoder.swift */,
+				E618199BCB64382EDA490CCC /* Info.plist */,
+				3BFFDD81986B8D115A79DA2E /* PiStorage.swift */,
+				DECB688AD03AD8346B8140F3 /* PiVideoViewerApp.swift */,
+				A21B16EAA1F26C8A3D399938 /* RootView.swift */,
+				0E05CBEF51E1C1D2CE1C4A9A /* ThermalMonitor.swift */,
+				F8EFB04B996577BF7B17305D /* UDPFrameReassembler.swift */,
+				C2EC3462708960C731E9EBEF /* UDPVideoClient.swift */,
+				CBDE066AC1F8826AAFE266E8 /* VideoDisplayView.swift */,
+				E36D36DB4426FEF054F4A99F /* Views */,
+			);
+			path = PiVideoViewer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2FD6CE5E84446FBCA629A7B2 /* PiVideoViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C4DDD8C71142FAF3D3E4463 /* Build configuration list for PBXNativeTarget "PiVideoViewer" */;
+			buildPhases = (
+				1454E5297E591DFAC9C84056 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PiVideoViewer;
+			packageProductDependencies = (
+			);
+			productName = PiVideoViewer;
+			productReference = 0915BE1A63F775C464F25FA0 /* PiVideoViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D4DCFC9386E19CABA838AC57 /* PiVideoViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA984F4A9F7968CD665B0D59 /* Build configuration list for PBXNativeTarget "PiVideoViewerTests" */;
+			buildPhases = (
+				A891DB06E0830966E09B6004 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A98428790879B30F10A65ECE /* PBXTargetDependency */,
+			);
+			name = PiVideoViewerTests;
+			packageProductDependencies = (
+			);
+			productName = PiVideoViewerTests;
+			productReference = 9E9002DFCBCE153EE5835AFE /* PiVideoViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BD022FC1E118F65705E79E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					2FD6CE5E84446FBCA629A7B2 = {
+						DevelopmentTeam = YOUR_TEAM_ID;
+						ProvisioningStyle = Automatic;
+					};
+					D4DCFC9386E19CABA838AC57 = {
+						DevelopmentTeam = YOUR_TEAM_ID;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 756B7B8B6D8381A6635892EA /* Build configuration list for PBXProject "PiVideoViewer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 2F3DFBE9909967830691D84F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2FD6CE5E84446FBCA629A7B2 /* PiVideoViewer */,
+				D4DCFC9386E19CABA838AC57 /* PiVideoViewerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1454E5297E591DFAC9C84056 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12C43F16EB3B4E30035EE3EB /* AppState.swift in Sources */,
+				04260AF86C25A265FD432E42 /* BLEManager.swift in Sources */,
+				CE94E2E6A8A866954ACB6D2E /* BLEProtocol.swift in Sources */,
+				023D0AC021978547A7E7FF6B /* BLEScanView.swift in Sources */,
+				30F0CF35573992926EBF301A /* BonjourDiscoveryManager.swift in Sources */,
+				1764B2F1ADFD4CD0CF75CC15 /* ChangePasswordSheet.swift in Sources */,
+				AD7A1744D2FB0389844B0F07 /* ChangeWiFiSheet.swift in Sources */,
+				411DB1EFFEBD6088B88DADC9 /* ContentView.swift in Sources */,
+				1A70517E1310EF0008E2F6F7 /* DebugOverlayView.swift in Sources */,
+				993293F7A6BE1D49BE39AFF9 /* HardwareH264Decoder.swift in Sources */,
+				6141A27076353176CC313A1D /* PINSetupView.swift in Sources */,
+				783ACF77D4403A3BCC58F693 /* PiStorage.swift in Sources */,
+				EB19F834F963003DC817027D /* PiVideoViewerApp.swift in Sources */,
+				FF2B690252FDC8BD4F5D1969 /* RootView.swift in Sources */,
+				9D19414497472D2B53BC5BDA /* SettingsMenuView.swift in Sources */,
+				E0D03C7DE954CEC545A862D2 /* StartView.swift in Sources */,
+				DBF61C67EAFD27C62818E149 /* ThermalMonitor.swift in Sources */,
+				6024AE578F1C733B6FB31607 /* UDPFrameReassembler.swift in Sources */,
+				E606EDF35AACE53F4BBC1FFD /* UDPVideoClient.swift in Sources */,
+				346838C782B6EB33DB634D29 /* VideoDisplayView.swift in Sources */,
+				194EFED4AE41186AA4F54AE6 /* WiFiSetupView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A891DB06E0830966E09B6004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34B58BF1EDED4550C789F794 /* UDPFrameReassemblerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A98428790879B30F10A65ECE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FD6CE5E84446FBCA629A7B2 /* PiVideoViewer */;
+			targetProxy = DB63DA88ECF7C67EEF16FD11 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01083A3BCE9F018CF2CB41CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YOUR_TEAM_ID;
+				INFOPLIST_FILE = PiVideoViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gata.pivideoviewer;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		09A3D59115AF96830A680D45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YOUR_TEAM_ID;
+				INFOPLIST_FILE = PiVideoViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gata.pivideoviewer;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		5F0A3F945D6F0D3503313F4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		7B35F9C5D37D82DCA681E3C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YOUR_TEAM_ID;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gata.pivideoviewer.tests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PiVideoViewer.app/PiVideoViewer";
+			};
+			name = Release;
+		};
+		D54472A15F012789530C8148 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YOUR_TEAM_ID;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gata.pivideoviewer.tests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PiVideoViewer.app/PiVideoViewer";
+			};
+			name = Debug;
+		};
+		FFCCDAA28CEE71953824FB62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C4DDD8C71142FAF3D3E4463 /* Build configuration list for PBXNativeTarget "PiVideoViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01083A3BCE9F018CF2CB41CA /* Debug */,
+				09A3D59115AF96830A680D45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		756B7B8B6D8381A6635892EA /* Build configuration list for PBXProject "PiVideoViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFCCDAA28CEE71953824FB62 /* Debug */,
+				5F0A3F945D6F0D3503313F4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DA984F4A9F7968CD665B0D59 /* Build configuration list for PBXNativeTarget "PiVideoViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D54472A15F012789530C8148 /* Debug */,
+				7B35F9C5D37D82DCA681E3C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1BD022FC1E118F65705E79E0 /* Project object */;
+}

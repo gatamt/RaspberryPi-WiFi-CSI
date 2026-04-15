@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+dist/
+
+# C11 rewrite CMake build outputs
+pi/pi_streamer_c/build/
+pi/pi_streamer_c/build-*/
+pi/pi_streamer_c/.cache/
+pi/pi_streamer_c/compile_commands.json
+
+# Xcode / iOS
+DerivedData/
+xcuserdata/
+*.xcuserstate
+*.pbxuser
+*.xcworkspace/xcuserdata/
+*.mode1v3
+
+# Logs
+*.log
+hailort.log
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Secrets (safety net)
+.env
+.env.local
+*.pem
+*.key
+*.crt
+credentials.json

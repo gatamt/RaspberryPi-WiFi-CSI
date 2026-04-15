@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pi_streamer"
+version = "0.1.0"
+description = "Raspberry Pi 5 + Hailo-10H pose video streamer for PiVideoViewer iOS app"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26",
+    "opencv-python>=4.9",
+    "av>=12.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pi_streamer*"]

@@ -1,0 +1,69 @@
+[Unit]
+Description=Raspberry Pi 5 low-level C video streamer (pi_streamer_c)
+Documentation=file:/home/pi/RaspberryPi-WiFi-CSI/pi/pi_streamer_c/README.md
+After=network-online.target pi-ble.service
+Wants=network-online.target
+ConditionPathExists=/home/pi/RaspberryPi-WiFi-CSI/pi/pi_streamer_c/build/pi_streamer_c
+
+[Service]
+Type=simple
+User=pi
+Group=pi
+WorkingDirectory=/home/pi/RaspberryPi-WiFi-CSI/pi/pi_streamer_c
+
+# The binary takes no mandatory arguments; flags can be overridden via a
+# drop-in at /etc/systemd/system/pi-streamer-c.service.d/override.conf.
+ExecStart=/home/pi/RaspberryPi-WiFi-CSI/pi/pi_streamer_c/build/pi_streamer_c \
+    --log-level=INFO \
+    --width=1280 \
+    --height=720 \
+    --fps=30 \
+    --bitrate-bps=2500000 \
+    --gop-size=30 \
+    --udp-port=3334
+
+# ---- Capabilities + limits for RT scheduling ----
+# pi_pipeline_run calls sched_setscheduler(SCHED_FIFO) on its worker
+# threads. CAP_SYS_NICE is the required capability; we grant it as an
+# ambient cap so the binary runs without sudo. CAP_NET_RAW is needed for
+# the io_uring SQE submit path (IORING_SETUP_SQPOLL) in the UDP sender.
+AmbientCapabilities=CAP_SYS_NICE CAP_NET_RAW
+CapabilityBoundingSet=CAP_SYS_NICE CAP_NET_RAW
+NoNewPrivileges=true
+
+# rtprio ceiling 80 is plenty (encoder thread runs at 50, camera at 40,
+# Hailo workers at 30). 99 would be a bad idea — reserved for kernel.
+LimitRTPRIO=80
+
+# Allow mlockall() to pin real-time pages so we never fault into swap.
+# Pi 5 16GB has no swap by default but we don't want page-cache eviction
+# either.
+LimitMEMLOCK=infinity
+
+# Restart semantics: any non-zero exit is a failure. 2s backoff gives the
+# camera / Hailo VDevice time to release handles before we come back up.
+Restart=on-failure
+RestartSec=2
+StartLimitInterval=30s
+StartLimitBurst=5
+
+# Journald ingestion — log output is stderr (writev atomic), go through
+# the service journal.
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=pi-streamer-c
+
+# ---- Sandboxing (best-effort, compatible with the caps above) ----
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/home/pi/RaspberryPi-WiFi-CSI/pi/pi_streamer_c/build \
+               /home/pi/RaspberryPi-WiFi-CSI/pi/pi_streamer_c/logs
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+
+[Install]
+WantedBy=multi-user.target
